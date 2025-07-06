@@ -1,0 +1,174 @@
+Optimization started at 2025-07-05 16:03:58.306596
+--------------------------------
+Loading column definition...
+Checking column definition...
+Loading data...
+Dropping columns / rows...
+Checking for NA values...
+Setting data types...
+Dropping columns / rows...
+Encoding data...
+	Updated column definition:
+		id: REAL_VALUED (ID)
+		time: DATE (TIME)
+		gl: REAL_VALUED (TARGET)
+		Age: REAL_VALUED (STATIC_INPUT)
+		BMI: REAL_VALUED (STATIC_INPUT)
+		A1C: REAL_VALUED (STATIC_INPUT)
+		FBG: REAL_VALUED (STATIC_INPUT)
+		ogtt.2hr: REAL_VALUED (STATIC_INPUT)
+		insulin: REAL_VALUED (STATIC_INPUT)
+		hs.CRP: REAL_VALUED (STATIC_INPUT)
+		Tchol: REAL_VALUED (STATIC_INPUT)
+		Trg: REAL_VALUED (STATIC_INPUT)
+		HDL: REAL_VALUED (STATIC_INPUT)
+		LDL: REAL_VALUED (STATIC_INPUT)
+		mean_glucose: REAL_VALUED (STATIC_INPUT)
+		sd_glucose: REAL_VALUED (STATIC_INPUT)
+		range_glucose: REAL_VALUED (STATIC_INPUT)
+		min_glucose: REAL_VALUED (STATIC_INPUT)
+		max_glucose: REAL_VALUED (STATIC_INPUT)
+		quartile.25_glucose: REAL_VALUED (STATIC_INPUT)
+		median_glucose: REAL_VALUED (STATIC_INPUT)
+		quartile.75_glucose: REAL_VALUED (STATIC_INPUT)
+		mean_slope: REAL_VALUED (STATIC_INPUT)
+		max_slope: REAL_VALUED (STATIC_INPUT)
+		number_Random140: REAL_VALUED (STATIC_INPUT)
+		number_Random200: REAL_VALUED (STATIC_INPUT)
+		percent_below.80: REAL_VALUED (STATIC_INPUT)
+		se_glucose_mean: REAL_VALUED (STATIC_INPUT)
+		numGE: REAL_VALUED (STATIC_INPUT)
+		mage: REAL_VALUED (STATIC_INPUT)
+		j_index: REAL_VALUED (STATIC_INPUT)
+		IQR: REAL_VALUED (STATIC_INPUT)
+		modd: REAL_VALUED (STATIC_INPUT)
+		distance_traveled: REAL_VALUED (STATIC_INPUT)
+		coef_variation: REAL_VALUED (STATIC_INPUT)
+		number_Random140_normByDays: REAL_VALUED (STATIC_INPUT)
+		number_Random200_normByDays: REAL_VALUED (STATIC_INPUT)
+		numGE_normByDays: REAL_VALUED (STATIC_INPUT)
+		distance_traveled_normByDays: REAL_VALUED (STATIC_INPUT)
+		diagnosis: REAL_VALUED (STATIC_INPUT)
+		freq_low: REAL_VALUED (STATIC_INPUT)
+		freq_moderate: REAL_VALUED (STATIC_INPUT)
+		freq_severe: REAL_VALUED (STATIC_INPUT)
+		glucotype: REAL_VALUED (STATIC_INPUT)
+		Height: REAL_VALUED (STATIC_INPUT)
+		Weight: REAL_VALUED (STATIC_INPUT)
+		Insulin_rate_dd: REAL_VALUED (STATIC_INPUT)
+		perc_cgm_prediabetic_range: REAL_VALUED (STATIC_INPUT)
+		perc_cgm_diabetic_range: REAL_VALUED (STATIC_INPUT)
+		SSPG: REAL_VALUED (STATIC_INPUT)
+		time_year: REAL_VALUED (KNOWN_INPUT)
+		time_month: REAL_VALUED (KNOWN_INPUT)
+		time_day: REAL_VALUED (KNOWN_INPUT)
+		time_hour: REAL_VALUED (KNOWN_INPUT)
+		time_minute: REAL_VALUED (KNOWN_INPUT)
+Interpolating data...
+	Dropped segments: 160
+	Extracted segments: 152
+	Interpolated values: 8003
+	Percent of values interpolated: 8.57%
+Splitting data...
+	Train: 62461 (61.57%)
+	Val: 12357 (12.18%)
+	Test: 16517 (16.28%)
+	Test OOD: 10113 (9.97%)
+Scaling data...
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+Data formatting complete.
+--------------------------------
+	Train: 63445 (62.63%)
+	Val: 12166 (12.01%)
+	Test: 16009 (15.80%)
+	Test OOD: 9684 (9.56%)
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 10 ID mean of (MSE, MAE): [341.57287570385756, 10.924797458996753]
+	Seed: 10 OOD mean of (MSE, MAE) stats: [367.159529496025, 13.647436281641859]
+	Seed: 10 ID median of (MSE, MAE): [77.53910110565833, 7.424350224016909]
+	Seed: 10 OOD median of (MSE, MAE) stats: [152.89366583500433, 10.772034640536196]
+	Train: 63249 (62.26%)
+	Val: 12497 (12.30%)
+	Test: 16368 (16.11%)
+	Test OOD: 9478 (9.33%)
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 11 ID mean of (MSE, MAE): [317.0892324283141, 10.682366223167605]
+	Seed: 11 OOD mean of (MSE, MAE) stats: [267.64074218458074, 10.020866139540951]
+	Seed: 11 ID median of (MSE, MAE): [76.7438156251458, 7.418754950961294]
+	Seed: 11 OOD median of (MSE, MAE) stats: [64.27616352580758, 6.82299388772401]
+	Train: 62878 (61.98%)
+	Val: 12502 (12.32%)
+	Test: 16426 (16.19%)
+	Test OOD: 9642 (9.50%)
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 12 ID mean of (MSE, MAE): [345.64150560979, 11.12128064378447]
+	Seed: 12 OOD mean of (MSE, MAE) stats: [543.6359211071672, 12.378318737671481]
+	Seed: 12 ID median of (MSE, MAE): [79.05292892632436, 7.522233463981512]
+	Seed: 12 OOD median of (MSE, MAE) stats: [63.300656804620345, 6.888802992487694]
+	Train: 63355 (62.45%)
+	Val: 12166 (11.99%)
+	Test: 16278 (16.05%)
+	Test OOD: 9649 (9.51%)
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 13 ID mean of (MSE, MAE): [341.9784789086022, 11.027778356983328]
+	Seed: 13 OOD mean of (MSE, MAE) stats: [188.87061545005466, 8.72565455492738]
+	Seed: 13 ID median of (MSE, MAE): [77.49995448161415, 7.499554205378942]
+	Seed: 13 OOD median of (MSE, MAE) stats: [53.09406545199349, 6.246590264286364]
+	Train: 63970 (62.97%)
+	Val: 12502 (12.31%)
+	Test: 16207 (15.95%)
+	Test OOD: 8913 (8.77%)
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 14 ID mean of (MSE, MAE): [274.9929481398923, 10.5257110396812]
+	Seed: 14 OOD mean of (MSE, MAE) stats: [314.0076820050351, 10.7210212171287]
+	Seed: 14 ID median of (MSE, MAE): [81.48274810101236, 7.55457361667979]
+	Seed: 14 OOD median of (MSE, MAE) stats: [70.92439911894503, 7.2074426464500485]
+	Train: 62763 (62.13%)
+	Val: 11344 (11.23%)
+	Test: 16397 (16.23%)
+	Test OOD: 10512 (10.41%)
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 15 ID mean of (MSE, MAE): [308.275209654772, 10.706341613286362]
+	Seed: 15 OOD mean of (MSE, MAE) stats: [280.25189807666425, 9.485599049418349]
+	Seed: 15 ID median of (MSE, MAE): [77.98080564011993, 7.477218357606748]
+	Seed: 15 OOD median of (MSE, MAE) stats: [45.16671956344758, 5.668953222938866]
+	Train: 62059 (61.70%)
+	Val: 11494 (11.43%)
+	Test: 16330 (16.24%)
+	Test OOD: 10701 (10.64%)
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 16 ID mean of (MSE, MAE): [317.8365970745396, 10.886954925942362]
+	Seed: 16 OOD mean of (MSE, MAE) stats: [428.4907426180691, 13.641860150921806]
+	Seed: 16 ID median of (MSE, MAE): [80.94619920074479, 7.554577870590422]
+	Seed: 16 OOD median of (MSE, MAE) stats: [119.8955003961475, 9.425157038793557]
+	Train: 62375 (61.66%)
+	Val: 12166 (12.03%)
+	Test: 16481 (16.29%)
+	Test OOD: 10138 (10.02%)
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 17 ID mean of (MSE, MAE): [331.5243845217342, 10.80749513196333]
+	Seed: 17 OOD mean of (MSE, MAE) stats: [258.3815379326573, 10.820274115513111]
+	Seed: 17 ID median of (MSE, MAE): [74.55665289627343, 7.369279292943543]
+	Seed: 17 OOD median of (MSE, MAE) stats: [88.33569441702136, 8.047243333911135]
+	Train: 62790 (61.89%)
+	Val: 12430 (12.25%)
+	Test: 16398 (16.16%)
+	Test OOD: 9830 (9.69%)
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 18 ID mean of (MSE, MAE): [350.57848627157836, 11.276969077385695]
+	Seed: 18 OOD mean of (MSE, MAE) stats: [201.01466982356422, 9.122288019596631]
+	Seed: 18 ID median of (MSE, MAE): [84.40858094235108, 7.772254437126674]
+	Seed: 18 OOD median of (MSE, MAE) stats: [53.2525713607458, 6.224918318037671]
+	Train: 63058 (62.25%)
+	Val: 12013 (11.86%)
+	Test: 16332 (16.12%)
+	Test OOD: 9901 (9.77%)
+	Scaled columns: ['id', 'gl', 'Age', 'BMI', 'A1C', 'FBG', 'ogtt.2hr', 'insulin', 'hs.CRP', 'Tchol', 'Trg', 'HDL', 'LDL', 'mean_glucose', 'sd_glucose', 'range_glucose', 'min_glucose', 'max_glucose', 'quartile.25_glucose', 'median_glucose', 'quartile.75_glucose', 'mean_slope', 'max_slope', 'number_Random140', 'number_Random200', 'percent_below.80', 'se_glucose_mean', 'numGE', 'mage', 'j_index', 'IQR', 'modd', 'distance_traveled', 'coef_variation', 'number_Random140_normByDays', 'number_Random200_normByDays', 'numGE_normByDays', 'distance_traveled_normByDays', 'diagnosis', 'freq_low', 'freq_moderate', 'freq_severe', 'glucotype', 'Height', 'Weight', 'Insulin_rate_dd', 'perc_cgm_prediabetic_range', 'perc_cgm_diabetic_range', 'SSPG', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 19 ID mean of (MSE, MAE): [340.2437782205053, 11.13424182231734]
+	Seed: 19 OOD mean of (MSE, MAE) stats: [246.72725748588542, 9.747048857826302]
+	Seed: 19 ID median of (MSE, MAE): [82.82834654337302, 7.653358348141242]
+	Seed: 19 OOD median of (MSE, MAE) stats: [56.24346829849848, 6.494498000086078]
+ID mean of (MSE, MAE): [326.97334965335847, 10.909393629350845]
+OOD mean of (MSE, MAE): [309.6180596179703, 10.831036712418658]
+ID median of (MSE, MAE): [79.30391334626172, 7.524615476742707]
+OOD median of (MSE, MAE): [76.73829047722316, 7.379863434525163]

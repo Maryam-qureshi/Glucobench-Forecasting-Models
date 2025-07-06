@@ -1,0 +1,288 @@
+Optimization started at 2025-07-05 16:57:12.472634
+--------------------------------
+Loading column definition...
+Checking column definition...
+Loading data...
+Dropping columns / rows...
+Checking for NA values...
+Setting data types...
+Dropping columns / rows...
+Encoding data...
+	Updated column definition:
+		id: REAL_VALUED (ID)
+		time: DATE (TIME)
+		gl: REAL_VALUED (TARGET)
+		fast_insulin: REAL_VALUED (OBSERVED_INPUT)
+		slow_insulin: REAL_VALUED (OBSERVED_INPUT)
+		calories: REAL_VALUED (OBSERVED_INPUT)
+		balance: REAL_VALUED (OBSERVED_INPUT)
+		quality: REAL_VALUED (OBSERVED_INPUT)
+		HR: REAL_VALUED (OBSERVED_INPUT)
+		BR: REAL_VALUED (OBSERVED_INPUT)
+		Posture: REAL_VALUED (OBSERVED_INPUT)
+		Activity: REAL_VALUED (OBSERVED_INPUT)
+		HRV: REAL_VALUED (OBSERVED_INPUT)
+		CoreTemp: REAL_VALUED (OBSERVED_INPUT)
+		time_year: REAL_VALUED (KNOWN_INPUT)
+		time_month: REAL_VALUED (KNOWN_INPUT)
+		time_day: REAL_VALUED (KNOWN_INPUT)
+		time_hour: REAL_VALUED (KNOWN_INPUT)
+		time_minute: REAL_VALUED (KNOWN_INPUT)
+Interpolating data...
+	Dropped segments: 1
+	Extracted segments: 8
+	Interpolated values: 0
+	Percent of values interpolated: 0.00%
+Splitting data...
+	Train: 4654 (47.17%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1140 (11.55%)
+Scaling data...
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+Data formatting complete.
+--------------------------------
+	Train: 4825 (48.90%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 969 (9.82%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 10 ID mean of (MSE, MAE): [504.5754723980763, 13.42379834415452]
+	Seed: 10 OOD mean of (MSE, MAE) stats: [2311.552668832363, 29.388185991283358]
+	Seed: 10 ID median of (MSE, MAE): [120.74636833631558, 9.339767563104463]
+	Seed: 10 OOD median of (MSE, MAE) stats: [686.3397895458669, 21.1499645439295]
+	Train: 4825 (48.90%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 969 (9.82%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+--------------------------------
+Loading column definition...
+Checking column definition...
+Loading data...
+Dropping columns / rows...
+Checking for NA values...
+Setting data types...
+Dropping columns / rows...
+Encoding data...
+	Updated column definition:
+		id: REAL_VALUED (ID)
+		time: DATE (TIME)
+		gl: REAL_VALUED (TARGET)
+		fast_insulin: REAL_VALUED (OBSERVED_INPUT)
+		slow_insulin: REAL_VALUED (OBSERVED_INPUT)
+		calories: REAL_VALUED (OBSERVED_INPUT)
+		balance: REAL_VALUED (OBSERVED_INPUT)
+		quality: REAL_VALUED (OBSERVED_INPUT)
+		HR: REAL_VALUED (OBSERVED_INPUT)
+		BR: REAL_VALUED (OBSERVED_INPUT)
+		Posture: REAL_VALUED (OBSERVED_INPUT)
+		Activity: REAL_VALUED (OBSERVED_INPUT)
+		HRV: REAL_VALUED (OBSERVED_INPUT)
+		CoreTemp: REAL_VALUED (OBSERVED_INPUT)
+		time_year: REAL_VALUED (KNOWN_INPUT)
+		time_month: REAL_VALUED (KNOWN_INPUT)
+		time_day: REAL_VALUED (KNOWN_INPUT)
+		time_hour: REAL_VALUED (KNOWN_INPUT)
+		time_minute: REAL_VALUED (KNOWN_INPUT)
+Interpolating data...
+	Dropped segments: 1
+	Extracted segments: 8
+	Interpolated values: 0
+	Percent of values interpolated: 0.00%
+Splitting data...
+	Train: 4654 (47.17%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1140 (11.55%)
+Scaling data...
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+Data formatting complete.
+--------------------------------
+	Train: 4825 (48.90%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 969 (9.82%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 10 ID mean of (MSE, MAE): [504.5754723980763, 13.42379834415452]
+	Seed: 10 OOD mean of (MSE, MAE) stats: [2311.552668832363, 29.388185991283358]
+	Seed: 10 ID median of (MSE, MAE): [120.74636833631558, 9.339767563104463]
+	Seed: 10 OOD median of (MSE, MAE) stats: [686.3397895458669, 21.1499645439295]
+	Train: 4825 (48.90%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 969 (9.82%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 11 ID mean of (MSE, MAE): [504.5754723980763, 13.42379834415452]
+	Seed: 11 OOD mean of (MSE, MAE) stats: [2311.552668832363, 29.388185991283358]
+	Seed: 11 ID median of (MSE, MAE): [120.74636833631558, 9.339767563104463]
+	Seed: 11 OOD median of (MSE, MAE) stats: [686.3397895458669, 21.1499645439295]
+	Train: 4514 (45.75%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1280 (12.97%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 12 ID mean of (MSE, MAE): [1237.7835277862202, 18.10582842482929]
+	Seed: 12 OOD mean of (MSE, MAE) stats: [441.8310559347403, 14.263359975705203]
+	Seed: 12 ID median of (MSE, MAE): [251.57332435646174, 12.519755439689021]
+	Seed: 12 OOD median of (MSE, MAE) stats: [230.15042011317416, 12.737301677846093]
+	Train: 4738 (48.02%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1056 (10.70%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 13 ID mean of (MSE, MAE): [1154.581382140247, 16.686018590918422]
+	Seed: 13 OOD mean of (MSE, MAE) stats: [1065.3339974303994, 19.811395476151997]
+	Seed: 13 ID median of (MSE, MAE): [126.30468603470733, 9.633938940664704]
+	Seed: 13 OOD median of (MSE, MAE) stats: [309.95979060654145, 14.8849661948964]
+	Train: 4654 (47.17%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1140 (11.55%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 14 ID mean of (MSE, MAE): [1237.3011777067268, 17.795061212756668]
+	Seed: 14 OOD mean of (MSE, MAE) stats: [530.3176761522145, 15.00964163478322]
+	Seed: 14 ID median of (MSE, MAE): [187.84802345057642, 10.465525892687381]
+	Seed: 14 OOD median of (MSE, MAE) stats: [233.50445758464315, 11.734616310150397]
+	Train: 4885 (49.51%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 909 (9.21%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+--------------------------------
+Loading column definition...
+Checking column definition...
+Loading data...
+Dropping columns / rows...
+Checking for NA values...
+Setting data types...
+Dropping columns / rows...
+Encoding data...
+	Updated column definition:
+		id: REAL_VALUED (ID)
+		time: DATE (TIME)
+		gl: REAL_VALUED (TARGET)
+		fast_insulin: REAL_VALUED (OBSERVED_INPUT)
+		slow_insulin: REAL_VALUED (OBSERVED_INPUT)
+		calories: REAL_VALUED (OBSERVED_INPUT)
+		balance: REAL_VALUED (OBSERVED_INPUT)
+		quality: REAL_VALUED (OBSERVED_INPUT)
+		HR: REAL_VALUED (OBSERVED_INPUT)
+		BR: REAL_VALUED (OBSERVED_INPUT)
+		Posture: REAL_VALUED (OBSERVED_INPUT)
+		Activity: REAL_VALUED (OBSERVED_INPUT)
+		HRV: REAL_VALUED (OBSERVED_INPUT)
+		CoreTemp: REAL_VALUED (OBSERVED_INPUT)
+		time_year: REAL_VALUED (KNOWN_INPUT)
+		time_month: REAL_VALUED (KNOWN_INPUT)
+		time_day: REAL_VALUED (KNOWN_INPUT)
+		time_hour: REAL_VALUED (KNOWN_INPUT)
+		time_minute: REAL_VALUED (KNOWN_INPUT)
+Interpolating data...
+	Dropped segments: 1
+	Extracted segments: 8
+	Interpolated values: 0
+	Percent of values interpolated: 0.00%
+Splitting data...
+	Train: 4654 (47.17%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1140 (11.55%)
+Scaling data...
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+Data formatting complete.
+--------------------------------
+	Train: 4825 (48.90%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 969 (9.82%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 10 ID mean of (MSE, MAE): [504.5754723980763, 13.42379834415452]
+	Seed: 10 OOD mean of (MSE, MAE) stats: [2311.552668832363, 29.388185991283358]
+	Seed: 10 ID median of (MSE, MAE): [120.74636833631558, 9.339767563104463]
+	Seed: 10 OOD median of (MSE, MAE) stats: [686.3397895458669, 21.1499645439295]
+	Train: 4825 (48.90%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 969 (9.82%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 11 ID mean of (MSE, MAE): [504.5754723980763, 13.42379834415452]
+	Seed: 11 OOD mean of (MSE, MAE) stats: [2311.552668832363, 29.388185991283358]
+	Seed: 11 ID median of (MSE, MAE): [120.74636833631558, 9.339767563104463]
+	Seed: 11 OOD median of (MSE, MAE) stats: [686.3397895458669, 21.1499645439295]
+	Train: 4514 (45.75%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1280 (12.97%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 12 ID mean of (MSE, MAE): [1237.7835277862202, 18.10582842482929]
+	Seed: 12 OOD mean of (MSE, MAE) stats: [441.8310559347403, 14.263359975705203]
+	Seed: 12 ID median of (MSE, MAE): [251.57332435646174, 12.519755439689021]
+	Seed: 12 OOD median of (MSE, MAE) stats: [230.15042011317416, 12.737301677846093]
+	Train: 4738 (48.02%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1056 (10.70%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 13 ID mean of (MSE, MAE): [1154.581382140247, 16.686018590918422]
+	Seed: 13 OOD mean of (MSE, MAE) stats: [1065.3339974303994, 19.811395476151997]
+	Seed: 13 ID median of (MSE, MAE): [126.30468603470733, 9.633938940664704]
+	Seed: 13 OOD median of (MSE, MAE) stats: [309.95979060654145, 14.8849661948964]
+	Train: 4654 (47.17%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1140 (11.55%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 14 ID mean of (MSE, MAE): [1237.3011777067268, 17.795061212756668]
+	Seed: 14 OOD mean of (MSE, MAE) stats: [530.3176761522145, 15.00964163478322]
+	Seed: 14 ID median of (MSE, MAE): [187.84802345057642, 10.465525892687381]
+	Seed: 14 OOD median of (MSE, MAE) stats: [233.50445758464315, 11.734616310150397]
+	Train: 4885 (49.51%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 909 (9.21%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 15 ID mean of (MSE, MAE): [1214.9567329084098, 17.677486736024083]
+	Seed: 15 OOD mean of (MSE, MAE) stats: [323.73904913949036, 11.330399230251192]
+	Seed: 15 ID median of (MSE, MAE): [209.3319944114868, 10.791520923032628]
+	Seed: 15 OOD median of (MSE, MAE) stats: [110.75560932878882, 8.680693206874928]
+	Train: 4825 (48.90%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 969 (9.82%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 16 ID mean of (MSE, MAE): [504.5754723980763, 13.42379834415452]
+	Seed: 16 OOD mean of (MSE, MAE) stats: [2311.552668832363, 29.388185991283358]
+	Seed: 16 ID median of (MSE, MAE): [120.74636833631558, 9.339767563104463]
+	Seed: 16 OOD median of (MSE, MAE) stats: [686.3397895458669, 21.1499645439295]
+	Train: 4514 (45.75%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1280 (12.97%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 17 ID mean of (MSE, MAE): [1237.7835277862202, 18.10582842482929]
+	Seed: 17 OOD mean of (MSE, MAE) stats: [441.8310559347403, 14.263359975705203]
+	Seed: 17 ID median of (MSE, MAE): [251.57332435646174, 12.519755439689021]
+	Seed: 17 OOD median of (MSE, MAE) stats: [230.15042011317416, 12.737301677846093]
+	Train: 4514 (45.75%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1280 (12.97%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 18 ID mean of (MSE, MAE): [1237.7835277862202, 18.10582842482929]
+	Seed: 18 OOD mean of (MSE, MAE) stats: [441.8310559347403, 14.263359975705203]
+	Seed: 18 ID median of (MSE, MAE): [251.57332435646174, 12.519755439689021]
+	Seed: 18 OOD median of (MSE, MAE) stats: [230.15042011317416, 12.737301677846093]
+	Train: 4738 (48.02%)
+	Val: 2016 (20.43%)
+	Test: 2057 (20.85%)
+	Test OOD: 1056 (10.70%)
+	Scaled columns: ['id', 'gl', 'fast_insulin', 'slow_insulin', 'calories', 'balance', 'quality', 'HR', 'BR', 'Posture', 'Activity', 'HRV', 'CoreTemp', 'time_year', 'time_month', 'time_day', 'time_hour', 'time_minute']
+	Seed: 19 ID mean of (MSE, MAE): [1154.581382140247, 16.686018590918422]
+	Seed: 19 OOD mean of (MSE, MAE) stats: [1065.3339974303994, 19.811395476151997]
+	Seed: 19 ID median of (MSE, MAE): [126.30468603470733, 9.633938940664704]
+	Seed: 19 OOD median of (MSE, MAE) stats: [309.95979060654145, 14.8849661948964]
+ID mean of (MSE, MAE): [998.8497675448519, 16.3433465437569]
+OOD mean of (MSE, MAE): [1124.4875894453814, 19.691746971830412]
+ID median of (MSE, MAE): [176.674846800981, 10.610349370542988]
+OOD median of (MSE, MAE): [371.36502771036385, 15.184704057214493]
